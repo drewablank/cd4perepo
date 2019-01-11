@@ -5,8 +5,8 @@ forge "http://forge.puppetlabs.com"
 #mod "puppetlabs/inifile",     '1.5.0'
 #mod "puppetlabs/stdlib",      '4.11.0'
 #mod "puppetlabs/concat",      '2.1.0'
-mod 'vshn/gitlab', '1.15.2'
-mod 'puppetlabs/haproxy', '1.5.0'
+mod 'puppet-gitlab', '3.0.2'
+mod 'puppetlabs-haproxy', '2.2.0'
 
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples
@@ -17,3 +17,10 @@ mod 'puppetlabs/haproxy', '1.5.0'
 #mod 'apache',
 #  :git    => 'https://github.com/puppetlabs/puppetlabs-apache',
 #  :branch => 'docs_experiment'
+
+mod 'puppetlabs-cd4pe', :latest
+# Requirements for cd4pe
+mod 'puppetlabs-concat', '4.2.1'
+mod 'puppetlabs-hocon', '1.0.1'
+mod 'puppetlabs-puppet_authorization', '0.4.0'
+mod 'puppetlabs-stdlib', '4.25.1'
